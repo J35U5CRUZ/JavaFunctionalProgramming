@@ -1,5 +1,6 @@
 package optional;
 
+import java.nio.channels.UnsupportedAddressTypeException;
 import java.util.Optional;
 
 /*
@@ -12,8 +13,9 @@ public class OptionalPrueba {
 
   public static void main(String[] args) {
     // probarOptional(null);
-    // orElseThrow(null);
-    isPresent(null);
+    // orElseOptional(null);
+    orElseThrow("jesus");
+    // isPresent(null);
   }
 
   public static void probarOptional(String nombre) {
